@@ -12,17 +12,10 @@ public:
     top = -1;
   }
   ~Stack() { delete [] arr; }
-  // void in(); // inputting
-  void traverse(); // traversing
+  void traverse();
   void push();
   void pop();
 };
-
-// void Stack::in() {
-//   cout << "Enter the array elements:" << endl;
-//   for (int i = 0; i < size; i++)
-//     cin >> arr[i];
-// }
 
 void Stack::push() {
   int item;
