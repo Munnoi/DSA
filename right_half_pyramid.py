@@ -1,5 +1,4 @@
 def right_half_pyramid(n):
-    # Time - O(n^2), Space - O(1)
     def v1():
         for i in range(n):
             for _ in range(i + 1):
@@ -13,9 +12,10 @@ def right_half_pyramid(n):
             print("*" * i)
     # v2()
 
+    # Time - O(n^2), Space - O(n)
     def v3():
         print("\n".join("*" * i for i in range(1, n + 1)))
 
-    v3()
+    # v3()
 
 right_half_pyramid(5)
